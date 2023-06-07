@@ -2,6 +2,8 @@ package com.example.mymovielist.Classes;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 public class Movie {
 
     @SerializedName("original_title")
@@ -9,6 +11,9 @@ public class Movie {
 
     @SerializedName("poster_path")
     private String image;
+
+    @SerializedName("results")
+    List<Movie> movieList;
 
     public Movie(String title, String image) {
         this.title = title;
